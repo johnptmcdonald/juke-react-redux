@@ -1,7 +1,7 @@
 {
   "name": "juke",
   "version": "1.0.0",
-  "description": "A generated project at Fullstack Academy",
+  "description": "Web audio player",
   "main": "server/main.js",
   "scripts": {
     "start": "webpack -w & nodemon --watch server -e js,html server/main.js",
