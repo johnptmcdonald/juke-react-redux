@@ -1,0 +1,16 @@
+import Artist from '../components/Artist';
+import { toggleSong } from '../action-creators/player';
+import { connect } from 'react-redux';
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    selectedArtist: state.artists.selected,
+    children: ownProps.children
+  };
+};
+
+const ArtistContainer = connect(
+  mapStateToProps
+)(Artist);
+
+export default ArtistContainer;
